@@ -192,7 +192,7 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Graduate Teaching Assistant",
+      role: "Master's Student",
       company: "Northeastern University",
       companylogo: require("./assets/images/northeastern-university-logo.jpg"),
       date: "October 2024 - Present",
