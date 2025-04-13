@@ -1,0 +1,175 @@
+@import "../../_globalColor";
+
+.education-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $darkBoxShadow2 0px 20px 30px -10px;
+  border-radius: 10px;
+}
+
+.dark-mode.education-card {
+  background-color: $darkCardBackground;
+  border-radius: 10px;
+}
+
+.education-card:hover + .education-card-border {
+  border-color: $educationCardBorder;
+  width: 100%;
+  -webkit-transition: width 0.6s ease-in-out;
+  -moz-transition: width 0.6s ease-in-out;
+  -o-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+
+.education-text-details {
+  padding: 1rem;
+}
+
+.education-card-border {
+  height: 30px;
+  width: 80%;
+  border-top: 2px solid $lightBorder1;
+  margin-bottom: 20px;
+  -webkit-transition: width 0.6s ease-in-out;
+  -moz-transition: width 0.6s ease-in-out;
+  -o-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+
+.education-head {
+  display: flex;
+  flex-direction: row;
+}
+
+.education-text-school {
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 27px;
+}
+
+.education-roundedimg {
+  object-fit: cover;
+  margin-right: 2rem;
+  width: 8rem;
+  height: 8rem;
+  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  border-radius: 50%;
+}
+
+.education-card-right {
+  min-width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-card-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-text-subHeader {
+  color: $textColor;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: normal;
+  margin: 0;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.dark-mode.education-text-subHeader {
+  background-color: $darkCardBackground;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.dark-mode.education-text-details {
+  background-color: $darkBackground;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.education-text-duration {
+  color: $titleColor;
+  font-size: 19px;
+  margin: 0;
+  text-align: center;
+}
+
+.education-text-desc {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Media Query */
+
+@media (max-width: 1380px) {
+  .education-card {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .education-card-right {
+    max-width: 90%;
+  }
+  .education-card-border {
+    width: 90%;
+  }
+  .education-text-subHeader {
+    font-size: 16px;
+  }
+  .education-text-school {
+    font-size: 20px;
+    height: 23px;
+    max-width: 100%;
+  }
+  .education-text-duration {
+    font-size: 16px;
+  }
+  .education-roundedimg {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-card {
+    text-align: center;
+  }
+  .education-card-right {
+    max-width: 100%;
+  }
+  .education-card-border {
+    width: 100%;
+  }
+  .education-roundedimg {
+    margin-top: 10px;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+  .education-text-bullets > ul {
+    max-width: 80%;
+    margin: auto;
+  }
+}
