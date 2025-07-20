@@ -54,8 +54,8 @@ const TerminalConfiguration = {
     Tools: "Microsoft Dynamics 365, Postman, Visual Studio 2022, VSCode"
   },
   projects: {
-    JobLeet: "Full stack recruitment agency software for Job seekers, Employers and Recruiters",
-    MessageQueue: "Distributed Message queuing protocol from scratch",
+    NUConnect: "Real-time chat and video communication platform for students using WebRTC, Socket.io, and Node.js.",
+    CloudInfra: "Cloud infrastructure automation using Terraform, Packer, and CI/CD pipelines with AWS and GCP."
   },
   // publications: {
   //   image_caption: "Image Captioning with Audio reinforcement using RNN and CNN",

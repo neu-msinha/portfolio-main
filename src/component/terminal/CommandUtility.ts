@@ -111,10 +111,10 @@ export const commands: Record<string, string | string[]> = {
   ),
   projects: Projects.map(
     (item) => `
-      <b style="color: #fc5b57">JobLeet </b> <br/>
-      ${item.JobLeet}<br/>
-       <b style="color: #fc5b57">MessageQueue </b> <br/>
-      ${item.MessageQueue}
+      <b style="color: #fc5b57">NUConnect </b> <br/>
+      ${item.NUConnect}<br/>
+       <b style="color: #fc5b57">CloudInfra </b> <br/>
+      ${item.CloudInfra}
     `
   ),
 

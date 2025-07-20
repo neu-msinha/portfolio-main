@@ -47,7 +47,7 @@ export const AboutBodyContainer = styled(Box)(({ theme }) => ({
     fontWeight: "600",
     fontSize: "41px",
     marginBottom: "15px",
-    color: `${Colors.aboutPrimaryColor}`,
+    color: `#595959`,
     [theme.breakpoints.down("md")]: {
       marginBottom: "5px",
       fontSize: "2em",
