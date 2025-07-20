@@ -11,7 +11,7 @@ import Projects from "./component/projects/Projects";
 
 function App() {
   useEffect(() => {
-    document.title = "Software Engineer II | Mayukh Sinha";
+    document.title = "Mayukh Sinha | Portfolio";
   }, []);
   return (
     <>

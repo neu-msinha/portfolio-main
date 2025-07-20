@@ -18,7 +18,6 @@ export default function EducationItemCard() {
     <>
       {myEducation.education.map((eduItem, index) => {
         const {
-          institution,
           degree,
           educationDate,
           educationDescription,
