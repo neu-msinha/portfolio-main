@@ -43,7 +43,7 @@ const projects = [
     description:
       "Designed and implemented infrastructure as code using Terraform, integrated CI/CD pipelines, and auto-scaled EC2 instances with monitoring via CloudWatch in a dual-repository AWS/GCP deployment setup.",
     visit: "#", // Add deployment link if available
-    learn: "https://github.com/CSYE6225-NetworkStructures/project", // Update if actual repo differs
+    learn: "https://github.com/CSYE6225-NetworkStructures/", // Update if actual repo differs
     skillsDesktop: [
       "Terraform",
       "Packer",

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import UserProfileNav from "./component/UserProfileNav/UserProfileNav";
-import HeroBodyWithHeroImageAssociation from "./component/herobodyWithTypeWriterEffect/herobody/herobodyWithHeroImageAssociation";
+// import HeroBodyWithHeroImageAssociation from "./component/herobodyWithTypeWriterEffect/herobody/herobodyWithHeroImageAssociation";
 import TerminalContainer from "./component/terminal/TerminalContainer";
 import GithubContainer from "./component/github/GithubContainer";
 import AboutUser from "./component/about/AboutUser";
@@ -16,9 +16,10 @@ function App() {
   return (
     <>
       <UserProfileNav />
-      <HeroBodyWithHeroImageAssociation/>
+      {/* <HeroBodyWithHeroImageAssociation/> */}
       <AboutUser/>
       <TerminalContainer/>
+      {/* <AboutUser/> */}
       <Experience/>
       <GithubContainer/>
       <Education/>
