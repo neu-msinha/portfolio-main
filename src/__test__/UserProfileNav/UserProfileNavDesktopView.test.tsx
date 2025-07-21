@@ -12,7 +12,7 @@ describe("UserProfileNavDesktopView Component", () => {
 
   test("navbar home should have the correct value", () => {
     const { queryByText } = render(<UserProfileNavDesktopView />);
-    const { navbar_home } = UserInformationDataForNavBar;
+    const { navbar_contributions: navbar_home } = UserInformationDataForNavBar;
     const developerHomeElement = queryByText(navbar_home);
     expect(developerHomeElement).not.toBeNull();
   });

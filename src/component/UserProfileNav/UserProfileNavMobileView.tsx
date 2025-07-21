@@ -29,12 +29,13 @@ const UserProfileNavMobileView: FC = () => {
   };
   const {
     developer_username,
-    navbar_home,
+    navbar_contributions,
     navbar_about,
     navbar_contact,
     navbar_terminal,
     navbar_experience,
     navbar_projects,
+    navbar_education
     // navbar_blogs,
     // navbar_youtube
   } = UserInformationDataForNavBar;
@@ -81,15 +82,8 @@ const UserProfileNavMobileView: FC = () => {
           <CloseIcon sx={{ fontSize: "2em" }} />
         </IconButton>
         <ListNavItemContainer types="block" sx={{ padding: "1em 0" }}>
-          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("/")}>
-            <ListItemText
-              primary={navbar_home}
-              primaryTypographyProps={primaryTypographyStyleMobile}
-              sx={textStyleListItemText}
-            ></ListItemText>
-          </ListItemButton>
 
-          <ListItemButton sx={ListItemButtonStyle}>
+             <ListItemButton sx={ListItemButtonStyle}>
             <ListItemText
               primary={navbar_about}
               primaryTypographyProps={primaryTypographyStyleMobile}
@@ -97,19 +91,10 @@ const UserProfileNavMobileView: FC = () => {
               onClick={() => scrollToSection("about")}
             ></ListItemText>
           </ListItemButton>
-          {/* <ListItemButton
-            sx={ListItemButtonStyle}
-            onClick={() => window.open("https://blog.nishantbanjade.com.np", "_blank")}
-          >
+
+            <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("terminal")}>
             <ListItemText
-              primary={navbar_blogs}
-              primaryTypographyProps={primaryTypographyStyleMobile}
-              sx={textStyleListItemText}
-            />
-          </ListItemButton> */}
-          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("contact")}>
-            <ListItemText
-              primary={navbar_contact}
+              primary={navbar_terminal}
               primaryTypographyProps={primaryTypographyStyleMobile}
               sx={textStyleListItemText}
             ></ListItemText>
@@ -122,24 +107,54 @@ const UserProfileNavMobileView: FC = () => {
               sx={textStyleListItemText}
             ></ListItemText>
           </ListItemButton>
-          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("projects")}>
+
+          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection(navbar_contributions)}>
+                  <ListItemText
+                    primary={navbar_contributions}
+                    primaryTypographyProps={primaryTypographyStyleMobile}
+                    sx={textStyleListItemText}
+                  ></ListItemText>
+          </ListItemButton>
+
+          {/* <ListItemButton
+            sx={ListItemButtonStyle}
+            onClick={() => window.open("https://blog.nishantbanjade.com.np", "_blank")}
+          >
+            <ListItemText
+              primary={navbar_blogs}
+              primaryTypographyProps={primaryTypographyStyleMobile}
+              sx={textStyleListItemText}
+            />
+          </ListItemButton> */}
+
+          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection(navbar_education)}>
+                  <ListItemText
+                    primary={navbar_education}
+                    primaryTypographyProps={primaryTypographyStyleMobile}
+                    sx={textStyleListItemText}
+                  ></ListItemText>
+                </ListItemButton>
+
+           <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("projects")}>
             <ListItemText
               primary={navbar_projects}
               primaryTypographyProps={primaryTypographyStyleMobile}
               sx={textStyleListItemText}
             ></ListItemText>
           </ListItemButton>
-          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("terminal")}>
+
+          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("contact")}>
             <ListItemText
-              primary={navbar_terminal}
+              primary={navbar_contact}
               primaryTypographyProps={primaryTypographyStyleMobile}
               sx={textStyleListItemText}
             ></ListItemText>
           </ListItemButton>
+        
           
           <ListItemButton
             sx={ListItemButtonStyle}
-            onClick={() => window.open("https://www.github.com/meu-msinha", "_blank")}
+            onClick={() => window.open("https://www.github.com/neu-msinha", "_blank")}
           >
             <ListItemText
               primary="Github"

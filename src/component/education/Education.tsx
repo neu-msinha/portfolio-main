@@ -9,7 +9,7 @@ import ComputerIcon from "@mui/icons-material/Computer";
 export default function () {
   return (
     <>
-    <div id = "experience">
+    <div id = "education">
       <ExperienceContainer>
         <ExperienceTitle>
           Education

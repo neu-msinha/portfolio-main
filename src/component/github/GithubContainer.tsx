@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const GithubContainer: FC = () => {
   return (
-    <div id="github" style={{marginBottom: "5%"}}>
+    <div id="contributions" style={{marginBottom: "5%"}}>
       {/* <ContainerDiv style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}> */}
         <ExperienceTitle style={{ width: "100%"}}>
           <a
