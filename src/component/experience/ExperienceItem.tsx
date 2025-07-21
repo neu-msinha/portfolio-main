@@ -29,16 +29,16 @@ export default function ExperienceItemCard() {
           return (
             <Card key={index} sx={{ margin: "2%", height: "auto" }}>
               <CardHeader
-                  avatar={
-                    <Avatar
-                      src={sotiLogo}
-                      alt="SOTI Logo"
-                      sx={{ width: 56, height: 56, bgcolor: "transparent" }}
-                    />
-                  }
-                  title={companyDesignation}
-                  subheader={experienceDate}
-                />
+                avatar={
+                  <Avatar
+                    src={sotiLogo}
+                    alt="SOTI Logo"
+                    sx={{ width: 56, height: 56, bgcolor: "transparent" }}
+                  />
+                }
+                title={companyDesignation}
+                subheader={experienceDate}
+              />
 
               <CardContent>
                 <Typography variant="body2" color="text.secondary">
@@ -85,7 +85,7 @@ export default function ExperienceItemCard() {
               </div>
             </Card>
           );
-        }
+        },
       )}
     </>
   );

@@ -10,11 +10,12 @@ const myEducation = {
         "• System Design\n\n" +
         "• Network Structures and Cloud Computing\n\n" +
         "• Web Design and User Experience\n\n" +
-        "• Program Structures and Algorithms"
+        "• Program Structures and Algorithms",
     },
     {
       institution: "Jaypee Institute of Information Technology, Noida, India",
-      degree: "Bachelor of Technology in Electronics and Communication Engineering",
+      degree:
+        "Bachelor of Technology in Electronics and Communication Engineering",
       educationDate: "Aug 2017 – Jun 2021",
       educationDescription:
         "Undergraduate program combining core electronics with foundational computer science. Developed a strong base in programming, data structures, and system design that laid the groundwork for a software engineering career.",
@@ -22,9 +23,9 @@ const myEducation = {
         "• Software Development Fundamentals\n\n" +
         "• Database Management Systems (DBMS)\n\n" +
         "• Data Structures and Algorithms\n\n" +
-        "• Operating Systems"
-    }
-  ]
+        "• Operating Systems",
+    },
+  ],
 };
 
 export default myEducation;

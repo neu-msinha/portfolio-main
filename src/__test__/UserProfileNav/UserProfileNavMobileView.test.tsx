@@ -24,7 +24,7 @@ describe("UserProfileNavMobileView Component", () => {
 
   test("Toggle menu should open and close the menu", () => {
     const { getByLabelText, queryByLabelText } = render(
-      <UserProfileNavMobileView />
+      <UserProfileNavMobileView />,
     );
 
     // check if the menu is initially closed

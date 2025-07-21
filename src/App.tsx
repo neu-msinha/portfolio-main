@@ -17,14 +17,14 @@ function App() {
     <>
       <UserProfileNav />
       {/* <HeroBodyWithHeroImageAssociation/> */}
-      <AboutUser/>
-      <TerminalContainer/>
+      <AboutUser />
+      <TerminalContainer />
       {/* <AboutUser/> */}
-      <Experience/>
-      <GithubContainer/>
-      <Education/>
-      <Projects title="Projects"/>
-      <Footer/>
+      <Experience />
+      <GithubContainer />
+      <Education />
+      <Projects title="Projects" />
+      <Footer />
     </>
   );
 }

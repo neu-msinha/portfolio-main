@@ -31,14 +31,15 @@ const TerminalLogic: FC = () => {
   const [output, setOutput] = useState<Command[]>([]);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const terminalContainerRef = useRef<HTMLDivElement | null>(null);
-  const {welcome_message, terminal_username} = TerminalConfiguration;
-  
+  const { welcome_message, terminal_username } = TerminalConfiguration;
+
   useEffect(() => {
     if (inputRef.current) {
       inputRef.current.focus();
     }
     if (terminalContainerRef.current) {
-      terminalContainerRef.current.scrollTop = terminalContainerRef.current.scrollHeight;
+      terminalContainerRef.current.scrollTop =
+        terminalContainerRef.current.scrollHeight;
     }
   }, [output]);
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -64,37 +65,37 @@ const TerminalLogic: FC = () => {
 
   return (
     <>
-   <div ref={terminalContainerRef} style={{ maxHeight: "376px", overflowY: "auto" }}>
+      <div
+        ref={terminalContainerRef}
+        style={{ maxHeight: "376px", overflowY: "auto" }}
+      >
+        <TerminalWelcomeMessages>{welcome_message}</TerminalWelcomeMessages>
 
-     <TerminalWelcomeMessages>
-       {welcome_message}
-      </TerminalWelcomeMessages>
-
-      {output.map((item, index) => (
-        <TerminalOutput
-          key={index}
-          command={item.command}
-          response={item.response}
-          data-testid = "terminal-output"
-        />
-      ))}
-      <TerminalPrompt>
-        <TerminalUserName>
-          {terminal_username}
-          <input
-            type="text"
-            aria-label="input-form"
-            value={input}
-            autoFocus
-            onChange={handleInputChange}
-            onKeyPress={handleKeyPress}
-            ref={inputRef}
-            style={customInputStyle}
-            data-testid="terminal-input"
+        {output.map((item, index) => (
+          <TerminalOutput
+            key={index}
+            command={item.command}
+            response={item.response}
+            data-testid="terminal-output"
           />
-        </TerminalUserName>
-      </TerminalPrompt>
-    </div>
+        ))}
+        <TerminalPrompt>
+          <TerminalUserName>
+            {terminal_username}
+            <input
+              type="text"
+              aria-label="input-form"
+              value={input}
+              autoFocus
+              onChange={handleInputChange}
+              onKeyPress={handleKeyPress}
+              ref={inputRef}
+              style={customInputStyle}
+              data-testid="terminal-input"
+            />
+          </TerminalUserName>
+        </TerminalPrompt>
+      </div>
     </>
   );
 };

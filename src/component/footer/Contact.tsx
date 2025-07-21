@@ -67,16 +67,22 @@ export default function Contact() {
           fontSize: isSmallScreen ? "1rem" : "1.5rem",
         }}
       >
-        <a href="mailto:sinha.may@northeastern.edu" style={{ color: "inherit", textDecoration: "none" }}>
+        <a
+          href="mailto:sinha.may@northeastern.edu"
+          style={{ color: "inherit", textDecoration: "none" }}
+        >
           sinha.may@northeastern.edu
         </a>
         {" | "}
-        <a href="tel:+18572255986" style={{ color: "inherit", textDecoration: "none" }}>
+        <a
+          href="tel:+18572255986"
+          style={{ color: "inherit", textDecoration: "none" }}
+        >
           +1 (857) 225-5986
         </a>
         {" | Boston MA"}
       </Typography>
-       <hr style={{ marginTop: "18px", marginBottom: "0" }} />
+      <hr style={{ marginTop: "18px", marginBottom: "0" }} />
     </ContactContainer>
   );
 }

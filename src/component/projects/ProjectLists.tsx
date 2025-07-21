@@ -1,4 +1,11 @@
-import { Typography, Button, Card, CardContent, CardActions, CardMedia } from "@mui/material";
+import {
+  Typography,
+  Button,
+  Card,
+  CardContent,
+  CardActions,
+  CardMedia,
+} from "@mui/material";
 import SkillsTag from "./SkillsTag";
 
 interface ProjectProps {
@@ -21,8 +28,15 @@ export default function ProjectLists({
   skillsMobile,
 }: ProjectProps) {
   return (
-    <a href={visit} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-      <Card sx={{ maxWidth: 450, cursor: "pointer", ":hover": { boxShadow: 6 } }}>
+    <a
+      href={visit}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ textDecoration: "none" }}
+    >
+      <Card
+        sx={{ maxWidth: 450, cursor: "pointer", ":hover": { boxShadow: 6 } }}
+      >
         <CardMedia sx={{ height: 130 }} image={src} title={header} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
@@ -33,7 +47,10 @@ export default function ProjectLists({
           </Typography>
         </CardContent>
 
-        <SkillsTag skillsArrayDesktop={skillsDesktop} skillsArrayMobile={skillsMobile} />
+        <SkillsTag
+          skillsArrayDesktop={skillsDesktop}
+          skillsArrayMobile={skillsMobile}
+        />
 
         <CardActions>
           <Button href={learn} target="_blank" rel="noopener noreferrer">

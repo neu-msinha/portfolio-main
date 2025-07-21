@@ -6,7 +6,7 @@ describe("TerminalOutput renders correctly", () => {
     const command = "test command";
     const response = "test response";
     const { getByText } = render(
-      <TerminalOutput command={command} response={response} />
+      <TerminalOutput command={command} response={response} />,
     );
     const commandElement = getByText(`[Nix-term:~$]`);
     const responseElement = getByText(response);

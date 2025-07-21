@@ -29,12 +29,13 @@ const UserProfileNavMobileView: FC = () => {
   };
   const {
     developer_username,
-    navbar_home,
+    navbar_contributions,
     navbar_about,
     navbar_contact,
     navbar_terminal,
     navbar_experience,
     navbar_projects,
+    navbar_education,
     // navbar_blogs,
     // navbar_youtube
   } = UserInformationDataForNavBar;
@@ -65,7 +66,10 @@ const UserProfileNavMobileView: FC = () => {
       </NavBarHeaderTitle>
 
       <IconButton aria-label="terminal-icon">
-        <TerminalIcon sx={{ fontSize: "1.3em" }} onClick={() => scrollToSection("terminal")} />
+        <TerminalIcon
+          sx={{ fontSize: "1.3em" }}
+          onClick={() => scrollToSection("terminal")}
+        />
       </IconButton>
 
       <Drawer anchor="top" open={menuOpen} onClose={toggleMenu}>
@@ -81,14 +85,6 @@ const UserProfileNavMobileView: FC = () => {
           <CloseIcon sx={{ fontSize: "2em" }} />
         </IconButton>
         <ListNavItemContainer types="block" sx={{ padding: "1em 0" }}>
-          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("/")}>
-            <ListItemText
-              primary={navbar_home}
-              primaryTypographyProps={primaryTypographyStyleMobile}
-              sx={textStyleListItemText}
-            ></ListItemText>
-          </ListItemButton>
-
           <ListItemButton sx={ListItemButtonStyle}>
             <ListItemText
               primary={navbar_about}
@@ -97,6 +93,40 @@ const UserProfileNavMobileView: FC = () => {
               onClick={() => scrollToSection("about")}
             ></ListItemText>
           </ListItemButton>
+
+          <ListItemButton
+            sx={ListItemButtonStyle}
+            onClick={() => scrollToSection("terminal")}
+          >
+            <ListItemText
+              primary={navbar_terminal}
+              primaryTypographyProps={primaryTypographyStyleMobile}
+              sx={textStyleListItemText}
+            ></ListItemText>
+          </ListItemButton>
+
+          <ListItemButton
+            sx={ListItemButtonStyle}
+            onClick={() => scrollToSection("experience")}
+          >
+            <ListItemText
+              primary={navbar_experience}
+              primaryTypographyProps={primaryTypographyStyleMobile}
+              sx={textStyleListItemText}
+            ></ListItemText>
+          </ListItemButton>
+
+          <ListItemButton
+            sx={ListItemButtonStyle}
+            onClick={() => scrollToSection(navbar_contributions)}
+          >
+            <ListItemText
+              primary={navbar_contributions}
+              primaryTypographyProps={primaryTypographyStyleMobile}
+              sx={textStyleListItemText}
+            ></ListItemText>
+          </ListItemButton>
+
           {/* <ListItemButton
             sx={ListItemButtonStyle}
             onClick={() => window.open("https://blog.nishantbanjade.com.np", "_blank")}
@@ -107,7 +137,33 @@ const UserProfileNavMobileView: FC = () => {
               sx={textStyleListItemText}
             />
           </ListItemButton> */}
-          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("contact")}>
+
+          <ListItemButton
+            sx={ListItemButtonStyle}
+            onClick={() => scrollToSection(navbar_education)}
+          >
+            <ListItemText
+              primary={navbar_education}
+              primaryTypographyProps={primaryTypographyStyleMobile}
+              sx={textStyleListItemText}
+            ></ListItemText>
+          </ListItemButton>
+
+          <ListItemButton
+            sx={ListItemButtonStyle}
+            onClick={() => scrollToSection("projects")}
+          >
+            <ListItemText
+              primary={navbar_projects}
+              primaryTypographyProps={primaryTypographyStyleMobile}
+              sx={textStyleListItemText}
+            ></ListItemText>
+          </ListItemButton>
+
+          <ListItemButton
+            sx={ListItemButtonStyle}
+            onClick={() => scrollToSection("contact")}
+          >
             <ListItemText
               primary={navbar_contact}
               primaryTypographyProps={primaryTypographyStyleMobile}
@@ -115,31 +171,11 @@ const UserProfileNavMobileView: FC = () => {
             ></ListItemText>
           </ListItemButton>
 
-          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("experience")}>
-            <ListItemText
-              primary={navbar_experience}
-              primaryTypographyProps={primaryTypographyStyleMobile}
-              sx={textStyleListItemText}
-            ></ListItemText>
-          </ListItemButton>
-          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("projects")}>
-            <ListItemText
-              primary={navbar_projects}
-              primaryTypographyProps={primaryTypographyStyleMobile}
-              sx={textStyleListItemText}
-            ></ListItemText>
-          </ListItemButton>
-          <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("terminal")}>
-            <ListItemText
-              primary={navbar_terminal}
-              primaryTypographyProps={primaryTypographyStyleMobile}
-              sx={textStyleListItemText}
-            ></ListItemText>
-          </ListItemButton>
-          
           <ListItemButton
             sx={ListItemButtonStyle}
-            onClick={() => window.open("https://www.github.com/meu-msinha", "_blank")}
+            onClick={() =>
+              window.open("https://www.github.com/neu-msinha", "_blank")
+            }
           >
             <ListItemText
               primary="Github"

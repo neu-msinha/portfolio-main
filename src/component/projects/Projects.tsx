@@ -1,15 +1,16 @@
+import {
+  ProjectContainer,
+  ProjectItemContainer,
+} from "../../assets/styles/projects/projects";
+import { ExperienceTitle } from "../../assets/styles/experience/Experience";
 
-import { ProjectContainer, ProjectItemContainer } from '../../assets/styles/projects/projects';
-import { ExperienceTitle } from '../../assets/styles/experience/Experience';
-
-import EngineeringIcon from '@mui/icons-material/Engineering';
-import ProjectLists from './ProjectLists';
+import EngineeringIcon from "@mui/icons-material/Engineering";
+import ProjectLists from "./ProjectLists";
 import nuconnectImage from "../../assets/images/nuconnect.png";
 import cloudInfraImage from "../../assets/images/aws.png";
 interface Props {
-  title: string
+  title: string;
 }
-
 
 const projects = [
   {
@@ -29,13 +30,7 @@ const projects = [
       "Socket.io",
       "MongoDB",
     ],
-    skillsMobile: [
-      "React",
-      "Node.js",
-      "WebRTC",
-      "Socket.io",
-      "MongoDB",
-    ],
+    skillsMobile: ["React", "Node.js", "WebRTC", "Socket.io", "MongoDB"],
   },
   {
     src: cloudInfraImage,
@@ -54,53 +49,45 @@ const projects = [
       "Load Balancing",
       "IAC",
     ],
-    skillsMobile: [
-      "Terraform",
-      "AWS",
-      "CI/CD",
-      "Packer",
-      "CloudWatch",
-    ],
+    skillsMobile: ["Terraform", "AWS", "CI/CD", "Packer", "CloudWatch"],
   },
 ];
-
 
 export default function Projects({ title }: Props) {
   return (
     <>
-     <div id = "projects">
-     <ProjectContainer>
-      <ExperienceTitle>
-        {title}
-        <EngineeringIcon
-          sx={{
-            fontSize: "1em",
-            verticalAlign: "middle",
-            marginLeft: "0.5em",
-            marginBottom: "0.4%",
-            color: "grey",
-            display: { xs: "none", sm: "inline" },
-          }}
-        />
-      </ExperienceTitle>
+      <div id="projects">
+        <ProjectContainer>
+          <ExperienceTitle>
+            {title}
+            <EngineeringIcon
+              sx={{
+                fontSize: "1em",
+                verticalAlign: "middle",
+                marginLeft: "0.5em",
+                marginBottom: "0.4%",
+                color: "grey",
+                display: { xs: "none", sm: "inline" },
+              }}
+            />
+          </ExperienceTitle>
 
-      <ProjectItemContainer>
-        {projects.map((project, index) => (
-          <ProjectLists
-            key={index}
-            src={project.src}
-            header={project.header}
-            description={project.description}
-            visit={project.visit}
-            learn={project.learn}
-            skillsDesktop={project.skillsDesktop}
-            skillsMobile={project.skillsMobile}
-          />
-        ))}
-      </ProjectItemContainer>
-    </ProjectContainer>
-     </div>
+          <ProjectItemContainer>
+            {projects.map((project, index) => (
+              <ProjectLists
+                key={index}
+                src={project.src}
+                header={project.header}
+                description={project.description}
+                visit={project.visit}
+                learn={project.learn}
+                skillsDesktop={project.skillsDesktop}
+                skillsMobile={project.skillsMobile}
+              />
+            ))}
+          </ProjectItemContainer>
+        </ProjectContainer>
+      </div>
     </>
-    
   );
 }

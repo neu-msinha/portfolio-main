@@ -3,13 +3,14 @@ const TerminalConfiguration = {
   terminal_username: "[Nix-term:~$]",
   whoami: {
     name: "Mayukh Sinha",
-    profession: "3 years experienced Software Engineer currently a Masters Student",
+    profession:
+      "3 years experienced Software Engineer currently a Masters Student",
     company: "SOTI | Northeastern",
   },
   experience: {
     soti: "SOTI",
     role: "Software Engineer I/II (June-2021 - August-2024)",
-    internship_role: "Technical Intern (Jan 2021 - Jun 2021)"
+    internship_role: "Technical Intern (Jan 2021 - Jun 2021)",
   },
   education: {
     title: "MS - Software Engineering",
@@ -17,18 +18,17 @@ const TerminalConfiguration = {
     CGPA: "3.92/4.0",
   },
   ls: {
-    
-      whoami: "General information",
-      experience: "Technical Experience",
-      projects: "Projects",
-      education: "Educational background",
-      skills: "Current SWE skills",
-      // publications: "Papers published on international Journals",
-      // blogs: "Contributing programming tutorials for learners",
-      github: "Where I put my codes :P",
-      LinkedIn: "LinkedIn handle of mine.",
-      Contact: "Email for any thing",
-      clear: "clears everything from the terminal",
+    whoami: "General information",
+    experience: "Technical Experience",
+    projects: "Projects",
+    education: "Educational background",
+    skills: "Current SWE skills",
+    // publications: "Papers published on international Journals",
+    // blogs: "Contributing programming tutorials for learners",
+    github: "Where I put my codes :P",
+    LinkedIn: "LinkedIn handle of mine.",
+    Contact: "Email for any thing",
+    clear: "clears everything from the terminal",
   },
   help: {
     whoami: "General information",
@@ -51,11 +51,13 @@ const TerminalConfiguration = {
     unit_testing: "NUnit, Jest",
     version_control: "Git",
     Agile_tool: "JIRA, SCRUM",
-    Tools: "Microsoft Dynamics 365, Postman, Visual Studio 2022, VSCode"
+    Tools: "Microsoft Dynamics 365, Postman, Visual Studio 2022, VSCode",
   },
   projects: {
-    NUConnect: "Real-time chat and video communication platform for students using WebRTC, Socket.io, and Node.js.",
-    CloudInfra: "Cloud infrastructure automation using Terraform, Packer, and CI/CD pipelines with AWS and GCP."
+    NUConnect:
+      "Real-time chat and video communication platform for students using WebRTC, Socket.io, and Node.js.",
+    CloudInfra:
+      "Cloud infrastructure automation using Terraform, Packer, and CI/CD pipelines with AWS and GCP.",
   },
   // publications: {
   //   image_caption: "Image Captioning with Audio reinforcement using RNN and CNN",
@@ -72,9 +74,8 @@ const TerminalConfiguration = {
     linkedin: "https://www.linkedin.com/in/mayukh99/",
   },
   contact: {
-    email: "sinha.may@northeastern.edu"
-  }
+    email: "sinha.may@northeastern.edu",
+  },
 };
 
 export default TerminalConfiguration;
-
