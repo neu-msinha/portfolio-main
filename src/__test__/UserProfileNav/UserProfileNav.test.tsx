@@ -15,7 +15,7 @@ describe("UserProfileNav component to test the Mobile and Desktop View", () => {
     render(
       <ThemeProvider theme={theme}>
         <UserProfileNav />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     // Check that UserProfileNavMobileView is rendered on small screens
@@ -37,7 +37,7 @@ describe("UserProfileNav component to test the Mobile and Desktop View", () => {
     render(
       <ThemeProvider theme={theme}>
         <UserProfileNav />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(screen.queryByText("UserProfileNavMobileView")).toBeNull();

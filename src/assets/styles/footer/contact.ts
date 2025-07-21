@@ -1,21 +1,20 @@
-
 import { Typography } from "@mui/material";
-import {styled} from "@mui/material/styles";
-import {Box} from "@mui/system";
+import { styled } from "@mui/material/styles";
+import { Box } from "@mui/system";
 import { Colors } from "../basetheme/theme";
-export const ContactContainer =  styled(Box)(() => ({
-   width: "auto"
-}))
-
-export const ContactIconsContainer = styled(Box)(() => ({
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    background:  Colors.footerBackGroundColor,
+export const ContactContainer = styled(Box)(() => ({
+  width: "auto",
 }));
 
-export const ContentTitle = styled(Typography)(({theme}) => ({
-    display: "flex",
+export const ContactIconsContainer = styled(Box)(() => ({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  background: Colors.footerBackGroundColor,
+}));
+
+export const ContentTitle = styled(Typography)(({ theme }) => ({
+  display: "flex",
   justifyContent: "center",
   alignItems: "center",
   lineHeight: 1.5,
@@ -34,4 +33,4 @@ export const ContentTitle = styled(Typography)(({theme}) => ({
     marginBottom: "3px",
     fontSize: "1.3em",
   },
-}))
+}));

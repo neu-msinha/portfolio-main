@@ -17,28 +17,27 @@ export default function EducationItemCard() {
   return (
     <>
       {myEducation.education.map((eduItem, index) => {
-        const {
-          degree,
-          educationDate,
-          educationDescription,
-          coursework,
-        } = eduItem;
+        const { degree, educationDate, educationDescription, coursework } =
+          eduItem;
 
         return (
           <Card key={index} sx={{ margin: "2%", height: "auto" }}>
             <CardHeader
               avatar={
-                degree == "Master of Science in Software Engineering Systems" ?
-                <Avatar
-                  src={northeasternLogo}
-                  alt="University Logo"
-                  sx={{ width: 56, height: 56, bgcolor: "transparent" }}
-                /> :
-                <Avatar
-                  src={jiitLogo}
-                  alt="University Logo"
-                  sx={{ width: 56, height: 56, bgcolor: "transparent" }}
-                /> 
+                degree ==
+                "Master of Science in Software Engineering Systems" ? (
+                  <Avatar
+                    src={northeasternLogo}
+                    alt="University Logo"
+                    sx={{ width: 56, height: 56, bgcolor: "transparent" }}
+                  />
+                ) : (
+                  <Avatar
+                    src={jiitLogo}
+                    alt="University Logo"
+                    sx={{ width: 56, height: 56, bgcolor: "transparent" }}
+                  />
+                )
               }
               title={degree}
               subheader={educationDate}
@@ -63,9 +62,7 @@ export default function EducationItemCard() {
                   <Typography>Coursework</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography
-                    sx={{ fontSize: "0.9em", color: Colors.primary }}
-                  >
+                  <Typography sx={{ fontSize: "0.9em", color: Colors.primary }}>
                     {coursework}
                   </Typography>
                 </AccordionDetails>

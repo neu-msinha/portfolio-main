@@ -10,7 +10,7 @@ describe("TypeWriterEffect component", () => {
       <TypeWriterEffect
         fullText={fullText}
         typeWriterSpeed={typeWriter_speed}
-      />
+      />,
     );
 
     // Wait for the typing effect to finish.
@@ -25,7 +25,7 @@ describe("TypeWriterEffect component", () => {
       <TypeWriterEffect
         fullText={NullText}
         typeWriterSpeed={typeWriter_speed}
-      />
+      />,
     );
     await waitFor(() => {
       expect(screen.queryByText(NullText.length)).toBeNull();
@@ -39,14 +39,14 @@ describe("TypeWriterEffect component", () => {
       <TypeWriterEffect
         fullText={longText}
         typeWriterSpeed={typeWriter_speed}
-      />
+      />,
     );
 
     await waitFor(
       () => {
         expect(screen.getByText(longText)).toBeTruthy();
       },
-      { timeout: 10000 }
+      { timeout: 10000 },
     ); // Adjust the timeout as needed for very long text.
   });
 });

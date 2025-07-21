@@ -9,7 +9,7 @@ type TerminalOutputProps = {
   command: string;
   response: string | string[];
 };
-const {terminal_username} = TerminalConfiguration;
+const { terminal_username } = TerminalConfiguration;
 const TerminalOutput: FC<TerminalOutputProps> = ({ command, response }) => (
   <div>
     <TerminalPrompt>

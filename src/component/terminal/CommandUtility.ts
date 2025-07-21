@@ -10,13 +10,13 @@ import {
   Contact,
   Experience,
   Projects,
-  ls
+  ls,
 } from "./commands/HelpUser";
 
 export const commands: Record<string, string | string[]> = {
   // Information about the user
   whoami: WhoamI.map(
-    (item) => `${item.name} <br/> ${item.profession} <br/> ${item.company}`
+    (item) => `${item.name} <br/> ${item.profession} <br/> ${item.company}`,
   ),
   // Education Qualifications
   education: EducationQualifications.map(
@@ -24,7 +24,7 @@ export const commands: Record<string, string | string[]> = {
       <b style="color: #fc5b57">Course:</b> ${item.title} <br/>
       <b style="color: #fc5b57">College:</b> ${item.desc} <br/>
       <b style="color: #fc5b57">CGPA:</b> ${item.CGPA}
-    `
+    `,
   ),
 
   clear: [],
@@ -41,7 +41,7 @@ export const commands: Record<string, string | string[]> = {
       <b style="color: #fc5b57">linkedin :</b> ${item.LinkedIn} <br/>
       <b style="color: #fc5b57">contact :</b> ${item.Contact} <br/>
       <b style="color: #fc5b57">clear :</b> ${item.clear}
-    `
+    `,
     //       <b style="color: #fc5b57">publications :</b> ${item.publications} <br/>
     //       <b style="color: #fc5b57">blogs :</b> ${item.blogs} <br/>
   ),
@@ -57,9 +57,9 @@ export const commands: Record<string, string | string[]> = {
       <b style="color: #fc5b57">linkedin :</b> ${item.LinkedIn} <br/>
       <b style="color: #fc5b57">contact :</b> ${item.Contact} <br/>
       <b style="color: #fc5b57">clear :</b> ${item.clear}
-    `
-      //     <b style="color: #fc5b57">publications :</b> ${item.publications} <br/>
-      // <b style="color: #fc5b57">blogs :</b> ${item.blogs} <br/>
+    `,
+    //     <b style="color: #fc5b57">publications :</b> ${item.publications} <br/>
+    // <b style="color: #fc5b57">blogs :</b> ${item.blogs} <br/>
   ),
 
   skills: Skills.map(
@@ -72,7 +72,7 @@ export const commands: Record<string, string | string[]> = {
       <b style="color: #fc5b57">Version Control :</b> ${item.version_control} <br/>
       <b style="color: #fc5b57">Agile Tool :</b> ${item.Agile_tool} <br/>
       <b style="color: #fc5b57">Other Tools :</b> ${item.Tools} <br/>
-    `
+    `,
   ),
 
   // publications: Publications.map(
@@ -92,22 +92,21 @@ export const commands: Record<string, string | string[]> = {
   github: Github.map(
     (item) => `
       <a href="${item.gh_handle}" target="_blank"><b style="color: #fc5b57">Github Handle </b> <br/>${item.gh_handle}</a>
-    `
+    `,
   ),
-
 
   linkedin: Linkedin.map(
     (item) => `
       <b style="color: #fc5b57">LinkedIn Handle </b> <br/>
       <a href="${item.linkedin}" target="_blank">${item.linkedin}</a>
-    `
+    `,
   ),
 
   contact: Contact.map(
     (item) => `
       <b style="color: #fc5b57">Email Address </b> <br/>
       ${item.email}
-    `
+    `,
   ),
   projects: Projects.map(
     (item) => `
@@ -115,7 +114,7 @@ export const commands: Record<string, string | string[]> = {
       ${item.NUConnect}<br/>
        <b style="color: #fc5b57">CloudInfra </b> <br/>
       ${item.CloudInfra}
-    `
+    `,
   ),
 
   experience: Experience.map(
@@ -123,6 +122,6 @@ export const commands: Record<string, string | string[]> = {
       <b style="color: #fc5b57">${item.soti}</b> <br/>
       ${item.role} <br/>
       ${item.internship_role}
-    `
+    `,
   ),
 };

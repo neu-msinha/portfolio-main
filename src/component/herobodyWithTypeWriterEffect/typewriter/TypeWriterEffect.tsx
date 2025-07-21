@@ -2,10 +2,13 @@ import { FC, useState, useEffect } from "react";
 
 interface TypeWriterProps {
   fullText: string;
-  typeWriterSpeed: number
+  typeWriterSpeed: number;
 }
 
-const TypeWriterEffect: FC<TypeWriterProps> = ({ fullText , typeWriterSpeed}) => {
+const TypeWriterEffect: FC<TypeWriterProps> = ({
+  fullText,
+  typeWriterSpeed,
+}) => {
   const [animatedText, setAnimatedText] = useState("");
   useEffect(() => {
     const calculateInterval = setInterval(() => {

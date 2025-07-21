@@ -6,7 +6,7 @@ import {
   GreenDot,
   TextInsideContainer,
 } from "../../assets/styles/terminal/terminalstyle";
-import KeyboardIcon from '@mui/icons-material/Keyboard';
+import KeyboardIcon from "@mui/icons-material/Keyboard";
 import { useMediaQuery, useTheme } from "@mui/material";
 export default function TermNav() {
   const theme = useTheme();
@@ -19,9 +19,8 @@ export default function TermNav() {
         <GreenDot />
       </DotsInsideContainer>
       <TextInsideContainer>Nix-term</TextInsideContainer>
-     
-        <KeyboardIcon sx={{ fontSize: isSmallScreen ? "0.7em" : "1em" }} />
-   
+
+      <KeyboardIcon sx={{ fontSize: isSmallScreen ? "0.7em" : "1em" }} />
     </NavInsideContainer>
   );
 }

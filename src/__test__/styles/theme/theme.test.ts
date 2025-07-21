@@ -18,10 +18,10 @@ describe("baseTheme", () => {
 
     // Test the background colors
     expect(baseTheme.palette.background.default).toBe(
-      Colors.backgroundLightGray
+      Colors.backgroundLightGray,
     );
     expect(baseTheme.palette.background.paper).toBe(
-      Colors.backgroundLightBlack
+      Colors.backgroundLightBlack,
     );
 
     // Test the text colors
@@ -54,7 +54,7 @@ describe("baseTheme", () => {
       "aboutPrimaryTextColor",
       "aboutPrimaryColor",
       "workPrimaryTitle",
-      "footerBackGroundColor"
+      "footerBackGroundColor",
     ]);
   });
 
@@ -74,7 +74,7 @@ describe("baseTheme", () => {
 
     // Check if any unexpected properties are present in the themeProperties array
     const unexpectedPropertyPresent = unexpectedProperties.some((property) =>
-      themeProperties.includes(property)
+      themeProperties.includes(property),
     );
 
     // Expect that no unexpected properties are present

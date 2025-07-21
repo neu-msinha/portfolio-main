@@ -23,7 +23,7 @@ const UserProfileNavDesktopView: FC = () => {
     navbar_terminal,
     navbar_experience,
     navbar_projects,
-    navbar_education
+    navbar_education,
     // navbar_blogs,
     // navbar_youtube
   } = UserInformationDataForNavBar;
@@ -46,8 +46,10 @@ const UserProfileNavDesktopView: FC = () => {
       </NavBarHeaderTitle>
 
       <ListNavItemContainer types="row">
-
-         <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("about")}>
+        <ListItemButton
+          sx={ListItemButtonStyle}
+          onClick={() => scrollToSection("about")}
+        >
           <ListItemText
             primary={navbar_about}
             primaryTypographyProps={primaryTypographyStyle}
@@ -55,7 +57,10 @@ const UserProfileNavDesktopView: FC = () => {
           ></ListItemText>
         </ListItemButton>
 
-           <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("terminal")}>
+        <ListItemButton
+          sx={ListItemButtonStyle}
+          onClick={() => scrollToSection("terminal")}
+        >
           <ListItemText
             primary={navbar_terminal}
             primaryTypographyProps={primaryTypographyStyle}
@@ -63,7 +68,10 @@ const UserProfileNavDesktopView: FC = () => {
           ></ListItemText>
         </ListItemButton>
 
-                <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("experience")}>
+        <ListItemButton
+          sx={ListItemButtonStyle}
+          onClick={() => scrollToSection("experience")}
+        >
           <ListItemText
             primary={navbar_experience}
             primaryTypographyProps={primaryTypographyStyle}
@@ -71,21 +79,27 @@ const UserProfileNavDesktopView: FC = () => {
           ></ListItemText>
         </ListItemButton>
 
-        <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection(navbar_contributions)}>
-        <ListItemText
-          primary={navbar_contributions}
-          primaryTypographyProps={primaryTypographyStyle}
-          sx={textStyleListItemText}
-        ></ListItemText>
-      </ListItemButton>
+        <ListItemButton
+          sx={ListItemButtonStyle}
+          onClick={() => scrollToSection(navbar_contributions)}
+        >
+          <ListItemText
+            primary={navbar_contributions}
+            primaryTypographyProps={primaryTypographyStyle}
+            sx={textStyleListItemText}
+          ></ListItemText>
+        </ListItemButton>
 
-        <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection(navbar_education)}>
-        <ListItemText
-          primary={navbar_education}
-          primaryTypographyProps={primaryTypographyStyle}
-          sx={textStyleListItemText}
-        ></ListItemText>
-      </ListItemButton>
+        <ListItemButton
+          sx={ListItemButtonStyle}
+          onClick={() => scrollToSection(navbar_education)}
+        >
+          <ListItemText
+            primary={navbar_education}
+            primaryTypographyProps={primaryTypographyStyle}
+            sx={textStyleListItemText}
+          ></ListItemText>
+        </ListItemButton>
         {/* <ListItemButton
           sx={ListItemButtonStyle}
           onClick={() => window.open("https://youtube.com/@codelogs_nishant?si=yiFptd1Wp8Bh2VSC", "_blank")}
@@ -107,24 +121,32 @@ const UserProfileNavDesktopView: FC = () => {
           />
         </ListItemButton> */}
 
-        <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("projects")}>
+        <ListItemButton
+          sx={ListItemButtonStyle}
+          onClick={() => scrollToSection("projects")}
+        >
           <ListItemText
             primary={navbar_projects}
             primaryTypographyProps={primaryTypographyStyle}
             sx={textStyleListItemText}
           ></ListItemText>
         </ListItemButton>
-        <ListItemButton sx={ListItemButtonStyle} onClick={() => scrollToSection("contact")}>
+        <ListItemButton
+          sx={ListItemButtonStyle}
+          onClick={() => scrollToSection("contact")}
+        >
           <ListItemText
             primary={navbar_contact}
             primaryTypographyProps={primaryTypographyStyle}
             sx={textStyleListItemText}
           ></ListItemText>
         </ListItemButton>
-        
+
         <ListItemButton
           sx={ListItemButtonStyle}
-          onClick={() => window.open("https://www.github.com/neu-msinha", "_blank")}
+          onClick={() =>
+            window.open("https://www.github.com/neu-msinha", "_blank")
+          }
         >
           <ListItemText
             primary="Github"
@@ -145,7 +167,6 @@ const UserProfileNavDesktopView: FC = () => {
             sx={textStyleListItemText}
           />
         </ListItemButton>
-
       </ListNavItemContainer>
     </NavBarContainer>
   );

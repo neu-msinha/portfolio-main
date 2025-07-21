@@ -67,10 +67,10 @@ export const HeroTypeWriterContainer = styled(Typography)(({ theme }) => ({
   padding: "2.5em",
   lineHeight: 1.6,
   letterSpacing: 1.25,
-  
+
   [theme.breakpoints.down("md")]: {
     lineHeight: 1.25,
-    letterSpacing: 1.20,
+    letterSpacing: 1.2,
     fontSize: "2vw",
     padding: "4em",
   },
@@ -81,4 +81,3 @@ export const HeroTypeWriterContainer = styled(Typography)(({ theme }) => ({
     padding: "3em",
   },
 }));
-

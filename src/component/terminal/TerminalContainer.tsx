@@ -9,14 +9,14 @@ import TerminalLogic from "./TerminalLogic";
 const TerminalContainer: FC = () => {
   return (
     <>
-    <div id = "terminal">
-      <ContainerDiv>
-        <TermContainer>
-          <TermNav />
-          <TerminalLogic />
-        </TermContainer>
-      </ContainerDiv>
-    </div>
+      <div id="terminal">
+        <ContainerDiv>
+          <TermContainer>
+            <TermNav />
+            <TerminalLogic />
+          </TermContainer>
+        </ContainerDiv>
+      </div>
     </>
   );
 };
