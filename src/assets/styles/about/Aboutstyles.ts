@@ -26,14 +26,15 @@ export const AboutBodyContainer = styled(Box)(({ theme }) => ({
 
 export const AboutBodyImage = styled("img")(({ src, theme }) => ({
   src: `url(${src})`,
-  width: "17%",
-  height: "13vw",
+  width: "200px",
+  height: "200px",
+  objectFit: "cover",
   borderRadius: "50%",
   border: `2px solid ${Colors.aboutPrimaryColor}`,
   margin: "1% 4%",
   [theme.breakpoints.down("md")]: {
-    width: "21%",
-    height: "19vw",
+    width: "150px",
+    height: "150px",
     margin: "1% auto",
   },
 }));

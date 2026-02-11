@@ -6,7 +6,7 @@ import {
   AboutDescription,
   AboutTitle,
 } from "../../assets/styles/about/Aboutstyles";
-import RepresentationalImage from "../../assets/images/Mayukh Sinha.png";
+import RepresentationalImage from "../../assets/images/IMG_5432.JPG";
 import developerData from "../../assets/config/developer_data/customizedev";
 import AboutUserSkills from "./AboutUserSkills";
 
